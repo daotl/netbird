@@ -18,6 +18,8 @@ fi
 source setup.env
 source base.setup.env
 
+export VOLUMES_ROOT
+
 if ! which envsubst >/dev/null 2>&1; then
   echo "envsubst is needed to run this script"
   if [[ $(uname) == "Darwin" ]]; then

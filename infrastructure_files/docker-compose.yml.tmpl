@@ -100,11 +100,11 @@ volumes:
   $MGMT_VOLUMENAME:
     driver_opts:
       type: none
-      device: ${VOLUMES_ROOT}/management
+      device: $VOLUMES_ROOT/management
       o: bind
   $SIGNAL_VOLUMENAME:
     driver_opts:
       type: none
-      device: ${VOLUMES_ROOT}/signal
+      device: $VOLUMES_ROOT/signal
       o: bind
   #$LETSENCRYPT_VOLUMENAME:
